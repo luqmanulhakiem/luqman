@@ -1,0 +1,112 @@
+body {
+    font-family: "Poppins", serif;
+}
+
+.nav-link:hover {
+    color: rgb(255, 179, 0) !important;
+}
+
+.btn-outline-info {
+    color: rgb(255, 179, 0) !important;
+    /* Text color */
+    border-color: rgb(255, 179, 0) !important;
+    /* Border color */
+}
+
+.btn-outline-info:hover {
+    background-color: rgb(255, 179, 0) !important;
+    /* Background color on hover */
+    color: white !important;
+    /* Text color on hover */
+    border-color: rgb(255, 179, 0) !important;
+    /* Keep border color on hover */
+}
+
+.nav-link.active {
+    color: rgb(68, 109, 246) !important;
+}
+
+/* Project Showcase */
+.wrapper {
+    position: relative;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    display: inline-block;
+    overflow: hidden;
+    width: auto;
+    /* Tentukan ukuran lebar tetap */
+    height: 300px;
+    /* Tentukan ukuran tinggi tetap */
+    border-radius: 15px;
+    /* Ensure proper scaling behavior */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Optional shadow */
+}
+
+.wrapper:hover {
+    transform: scale(1.1);
+    /* Scale the wrapper by 10% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Optional shadow */
+}
+
+.container-project {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    /* Pastikan tidak ada elemen yang keluar */
+    background: #f0f0f0;
+    /* Warna latar belakang default jika gambar tidak memenuhi container */
+}
+
+.image-project {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* Fit gambar ke container tanpa mengubah proporsi */
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+}
+
+.middle-project {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-project:hover .image-project {
+    opacity: 0.3;
+}
+
+.container-project:hover .middle-project {
+    opacity: 1;
+}
+
+.text-project h1 {
+    color: white;
+    font-size: 24px;
+    padding: 16px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    /* Adding shadow */
+    transition: all 0.5s ease;
+}
+
+.card-img-top {
+    height: 250px;
+    /* Set a uniform height */
+    object-fit: cover;
+    /* Ensure the image scales properly without distortion */
+    width: 100%;
+    /* Ensure the image fills the card's width */
+}
+
+.container-project:hover .text-project h1 {
+    transform: translateY(-10px);
+    /* Animate upward */
+}
