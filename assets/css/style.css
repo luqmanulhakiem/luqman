@@ -34,7 +34,7 @@ body {
     overflow: hidden;
     width: auto;
     /* Tentukan ukuran lebar tetap */
-    height: 300px;
+    /* height: 300px; */
     /* Tentukan ukuran tinggi tetap */
     border-radius: 15px;
     /* Ensure proper scaling behavior */
