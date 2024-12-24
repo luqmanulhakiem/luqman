@@ -110,3 +110,50 @@ body {
     transform: translateY(-10px);
     /* Animate upward */
 }
+
+/* Parallax */
+.parallax {
+    background-image: url('../../assets/images/projects/HighKing.png');
+
+    /* Sesuaikan path gambar */
+    height: 60vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .parallax {
+        height: 50vh;
+        /* Reduced height for smaller screens */
+    }
+}
+
+@media (max-width: 450px) {
+    .parallax {
+        height: 30vh;
+        /* Reduced height for smaller screens */
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    /* Tambahkan latar belakang transparan agar teks lebih terlihat */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-text {
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* End of Parallax */
