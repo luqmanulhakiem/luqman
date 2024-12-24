@@ -112,36 +112,6 @@ body {
 }
 
 /* Parallax */
-.parallax {
-    background-image: url('../../assets/images/projects/HighKing.png');
-
-    /* Sesuaikan path gambar */
-    height: 60vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    color: white;
-    text-align: center;
-}
-
-@media (max-width: 768px) {
-    .parallax {
-        height: 50vh;
-        /* Reduced height for smaller screens */
-    }
-}
-
-@media (max-width: 450px) {
-    .parallax {
-        height: 30vh;
-        /* Reduced height for smaller screens */
-    }
-}
 
 .content {
     position: relative;
